@@ -1,0 +1,73 @@
+
+
+<!-- NAVBAR -->
+<!--
+<div class="mainContainer">
+  <div class="navbar">
+  <nav>
+    <div class="nav-wrapper">
+     <a href="/" class="brand-logo">itsaGO</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="signout">Log Out</a></li>
+      <li><a href="dashboard">Event Dashboard</a></li>
+      <li><a href="/">Home</a></li>
+    </ul>
+
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+  </nav>
+  </div> -->
+
+<!-- END NAVBAR -->
+
+<!-- {"id":1,
+"eventName":"Something",
+"date":"2017-12-12",
+"notes":"Bring a towel.",
+"totalCost":"40",
+"maxCPP":"4",
+"createdAt":"2017-09-28T22:55:50.000Z",
+"updatedAt":"2017-09-28T22:55:50.000Z",
+"UserUuid":"1eab39b0-a4a0-11e7-be20-37ea83ccec90"} -->
+
+<div class="container"> <!-- main container -->
+<div class="row fig">
+    <div class="col s8">
+      <h3>(this.eventname) {{{this.eventName}}}</h3><br>
+
+        <p> (this.date) {{this.date}}</p><br>
+        <p> (this.totalcost) {{this.totalcost}}</p>
+        <p> (this.currentcostpp) {{this.currentcostpp}}</p><br>
+
+        <p> (this.notes) {{this.notes}}</p>
+
+</div>
+    <div class="col s4 map">
+      <h4 id="upcoming"><strong>Total People to Go! <strong> </span></h4>
+      <p> Current Count: (this.currentCount) {{this.currentCount}}</p>
+      <p> Total Count Needed: (this.finalCount){{this.finalCount}}</p>
+    </div>
+</div>
+
+
+<div class="row newton">
+<div class="col s12">
+  <div class="row innernewton">
+  <div class="col s10">
+  <h3> Guests List: <h3>
+  <h5>(this.guestList){{this.guestList}}</h5>
+  </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+{{!--   SIDE NAV --}}
+  <ul id="slide-out" class="side-nav">
+    <li><div class="user-view">
+    </div></li>
+    <li><a href="signout">Sign Out</a></li>
+    <li><a href="dashboard">Event Dashboard</a></li>
+    <li><a href="/">Home</a></li>
+  </ul>

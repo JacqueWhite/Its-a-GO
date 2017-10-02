@@ -1,15 +1,16 @@
 <!-- NAVBAR -->
 
 <div class="mainContainer">
-  <div class="navbar-fixed">
+  <div class="navbar">
   <nav>
     <div class="nav-wrapper">
      <a href="/" class="brand-logo">itsaGO</a>
-    <ul class="right hide-on-med-and-down">
+    <ul class="right hide-on-med-and-down navList">
       {{!-- <li><a href="login">Login</a></li> --}}
       <li><a href="signout">Log Out</a></li>
       <li><a href="dashboard">Event Dashboard</a></li>
       <li><a href="about">About</a></li>
+      <li><a href= "https://github.com/marianapt/Project2" target="_blank"></a>GitHub</li>
     </ul>
 
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -18,25 +19,19 @@
 
 
 <!-- END NAVBAR -->
-
-
 <div class="container">
-<div class="row teal lighten-4">
+<div class="row teal lighten-4" style="margin-top:24px; padding:20px">
     <div class="col s12 teal accent-4">
-        <h2>Create a new event:</h2>
-    <br>
+
+        <h2 style="text-align: center">Create a new event:</h2>
     <hr>
     </div>
     <div class="col s2"></div>
-    <div class="col s2">
-        <form action="/api/event/new" method="POST">
+    <div class="col s6">
+        <form action="/api/event/new" method="post">
 
-{{!--             <label for="UserUuid">uuid</label>
-            <input type="text" name="UserUuid">
-            <br>
- --}}
-            <label for="event" placeholder="Folsom Street Festival">Event</label>
-            <input type="text" name="event">
+            <label for="eventName" placeholder="Folsom Street Festival">Event</label>
+            <input type="text" name="eventName">
             <br>
 
             <label for="date" placeholder="2018-09-21">Date</label>
@@ -55,7 +50,7 @@
             <input type="text" name="maxCPP">
             <br>
 
-            <button type="submit" >Submit</button>
+            <button type="submit" name='button'>Submit</button>
         </form>
         </div>
     <div class="col s2"></div>
@@ -69,4 +64,5 @@
     <li><a href="signout">Sign Out</a></li>
     <li><a href="dashboard">Event Dashboard</a></li>
     <li><a href="about">About</a></li>
+    <li><a href= "https://github.com/marianapt/Project2" target="_blank"><img src="images/github.png" alt="GitHub" width=40 height=40</a></li>
   </ul>

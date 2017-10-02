@@ -39,10 +39,9 @@ router.post('/new', function(req, res) {
       console.log("Info stored in token:");
       console.log(decoded);
       req.body.UserUuid = decoded.user; //Make a new key in body and set it to the uuid.
-      console.log(req.body.event);
 
       var newEvent = {
-        event: req.body.event,
+        eventName: req.body.eventName,
         date: req.body.date,
         notes: req.body.notes,
         totalCost: req.body.totalCost,
@@ -53,19 +52,27 @@ router.post('/new', function(req, res) {
       db.Event.create(newEvent).then(function(data) {
 
         db.User.findOne({
-        where: {
-          uuid: decoded.user
-        }
-      })
-      .then(function(record) {
-        var newParticipant = {
-          email: record.email,
-          stripeToken: null,
-          EventId: data.id
-        };
+          where: {
+            uuid: decoded.user
+          }
+        })
+        .then(function(record) {
+          // var newParticipant = {
+          //   email: record.email,
+          //   stripeToken: null,
+          //   EventId: data.id
+          // };
+          var newParticipant = {
+            name: record.firstName,
+            avatar: null,
+            email: record.email,
+            stripeToken: null,
+            EventId: 1
+          };
 
         db.Participant.create(newParticipant).then(function(participantData){
-          res.send(participantData);
+          // res.send(participantData);
+          res.redirect("/addGuests")
         })
       });
       });
@@ -74,6 +81,9 @@ router.post('/new', function(req, res) {
     res.redirect("/login");
   }
 });
+
+
+
 
 // router.post('/new', function(req, res) {
 //   console.log(req.body);

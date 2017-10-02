@@ -3,15 +3,16 @@
 <!-- NAVBAR -->
 
 <div class="mainContainer">
-  <div class="navbar-fixed">
+  <div class="navbar">
   <nav>
     <div class="nav-wrapper">
-     <a href="/" class="brand-logo">itsaGO</a> 
-    <ul class="right hide-on-med-and-down">
+     <a href="/" class="brand-logo">itsaGO</a>
+    <ul class="right hide-on-med-and-down navList">
       {{!-- <li><a href="login">Login</a></li> --}}
       {{!-- <li><a href="signout">Log Out</a></li> --}}
       <li><a href="about">About</a></li>
       <li><a href="/">Home</a></li>
+      <li><a href= "https://github.com/marianapt/Project2" target="_blank"></a>GitHub</li>
     </ul>
 
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -32,7 +33,7 @@
         </div>
         <div class="col offset-10 s12">
         <hr>
-        <form class="" action="/api/user/new" method="post">
+        <form action="/api/user/new" method="post">
           <label for="firstname"> First Name:</label>
           <input type="text" name="firstname">
           <br>
@@ -62,4 +63,5 @@
     <li><a href="/">Home</a></li>
     {{!-- <li><a href="dashboard">Event Dashboard</a></li> --}}
     <li><a href="about">About</a></li>
+     <li><a href= "https://github.com/marianapt/Project2" target="_blank"><img src="images/github.png" alt="GitHub" width=40 height=40</a></li>
   </ul>

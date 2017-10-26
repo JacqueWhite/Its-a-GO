@@ -1,10 +1,10 @@
 # ItsaGO.
 
-<a href="https://itsa-go.herokuapp.com/">See it live here!</a>
+<a href="https://itsa-go.herokuapp.com/">See it live here</a>
 
 Simple event and RSVP manager. Stop planning your parties and start *enjoying* them!
 
-# 3 simple steps:
+3 simple steps:
 	* Red: Signup, login, create your event. You'll set:
 		* total cost of the event
 		* max cost per person

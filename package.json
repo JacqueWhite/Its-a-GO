@@ -35,7 +35,7 @@
     "sequelize": "^4.10.2",
     "stripe": "^5.1.0"
   },
-    "engines": {
+  "engines": {
     "node": "^8.1.4",
     "npm": "^5.4.2"
   }

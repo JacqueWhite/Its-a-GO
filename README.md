@@ -1,6 +1,6 @@
 # ItsaGO.
 
-<a href="https://itsa-go.herokuapp.com/">See it live here/</a>
+<a href="https://itsa-go.herokuapp.com/">See it live here!</a>
 
 Simple event and RSVP manager. Stop planning your parties and start *enjoying* them!
 

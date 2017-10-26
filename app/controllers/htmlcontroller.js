@@ -13,7 +13,7 @@ router.get("/", function(req,res) {
     dataValues: {}
   }
     // res.render("splash");
-  res.render("splash", Object.assign(results.dataValues, {url: 'css/img/itsago2.jpg'}))
+  res.render("home", Object.assign(results.dataValues))
 });
 
 router.get("/login", function(req,res) {
@@ -23,7 +23,7 @@ router.get("/login", function(req,res) {
       res.redirect("/dashboard")
     });
   } else {
-    res.render("login",{url:'css/img/itsago.jpg'});
+    res.render("login");
   }
 
 });
@@ -35,7 +35,7 @@ router.get("/signup", function(req,res) {
       res.redirect("/dashboard")
     });
   } else {
-    res.render("signup", {url: 'css/img/itsago.jpg'});
+    res.render("signup");
   }
 });
 
@@ -102,7 +102,7 @@ router.get("/dashboard", function(req, res) {
 });
 
 router.get("/about", function(req,res) {
-    res.render("about", {url:'css/img/itsago5.jpg'});
+    res.render("about");
 });
 
 router.get("/stripetest", function (req, res) {
@@ -111,7 +111,7 @@ router.get("/stripetest", function (req, res) {
 
 router.get("/signout", function (req, res) {
   res.clearCookie("cookiename");
-  res.render("splash", {url: 'css/img/itsago2.jpg'})
+  res.render("home")
 })
 
 //NOT protected.

@@ -1,6 +1,7 @@
-// Nav Bar and SideBar 
-   $(document).ready(function(){
-      $(".button-collapse").sideNav();
-    });
+$(document).ready(function(){
+  $('.parallax').parallax();
+  $('.scrollspy').scrollSpy();
+  $(".button-collapse").sideNav();
+});
 
    

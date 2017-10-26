@@ -2,67 +2,22 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>itsaGO</title>
-  {{!-- here we have the icon on the web browser --}}
   <link href="./css/img/favicon.ico" rel="icon"/>
-  <!--Import Google Icon Font-->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!-- Materialize Icons  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection"/>
-  <link rel="stylesheet" href="./css/master.css">
-  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bevan|Fjalla+One|Ultra|Zilla+Slab+Highlight" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
-
-  <!--Let browser know website is optimized for mobile-->
-
-  <style>
-    body {
-      background-image: url('css/img/itsago2.jpg');
-      background-image: url({{url}});
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans" rel="stylesheet">
+  <!-- CSS  -->
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
 </head>
 
 <body>
-
-
-  <!-- NAVBAR -->
-
-  {{!--
-  <div class="mainContainer">
-    <div class="navbar-fixed">
-      <span></span>
-      <nav>
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">itsaGO</a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="login">Login</a></li>
-            <li><a href="loginOut">Log Out</a></li>
-            <li><a href="dashboard">Event Dashboard</a></li>
-            <li><a href="about">About</a></li>
-
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li><a href="login">Login</a></li>
-            <li><a href="dashboard">Event Dashboard</a></li>
-            <li><a href="about">About</a></li>
-
-          </ul>
-        </div>
-      </nav>
-    </div> --}}
-    <!-- END NAVBAR -->
-
-    {{{body}}} {{!--
-    <footer class="page-footer">
-      <div class="container">
-        © 2017 itsaGO, All rights reserved.
-        <a class="grey-text text-lighten-4 right" href="https://github.com/marianapt/Project2"></a>
-      </div>
-    </footer> --}}
-
+{{{body}}}
+</body>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
@@ -71,13 +26,11 @@
     <script type="text/javascript" src="js/materialize.js"></script>
 
     <script>
-      //Nav Bar and SideBar
-      $(document).ready(function () {
+      $(document).ready(function(){
+        $('.parallax').parallax();
+        $('.scrollspy').scrollSpy();
         $(".button-collapse").sideNav();
       });
     </script>
-
-  </div>
-</body>
 
 </html>

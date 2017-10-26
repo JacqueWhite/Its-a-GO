@@ -1,67 +1,47 @@
-
-
-<!-- NAVBAR -->
-
-<div class="mainContainer">
-  <div class="navbar">
-  <nav>
-    <div class="nav-wrapper">
-     <a href="/" class="brand-logo">itsaGO</a>
-    <ul class="right hide-on-med-and-down navList">
-      {{!-- <li><a href="login">Login</a></li> --}}
-      {{!-- <li><a href="signout">Log Out</a></li> --}}
-      <li><a href="about">About</a></li>
-      <li><a href="/">Home</a></li>
-      <li><a href= "https://github.com/marianapt/Project2" target="_blank"></a>GitHub</li>
-    </ul>
-
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-
-  </nav>
-  </div>
-
-<!-- END NAVBAR -->
-
-<!-- Create user placeholder -->
+<div class="navbar-fixed">
+    <nav role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container movetext" href="/" class="brand-logo">ItsaGO</a>
+            <ul class="right hide-on-med-and-down section table-of-contents">
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="login">Login</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="https://github.com/JacqueWhite/Its-a-GO" target="_blank">GitHub</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="login">Login</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="https://github.com/JacqueWhite/Its-a-GO" target="_blank">GitHub</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+</div>
 
 <div class="container">
-<div class="row">
-<div class="col s12">
-    <div class="container cyan lighten-5">
-    <div class="row">
-        <div class="col offset-10 s12 center-align"><h3>Create a user:</h3>
-        </div>
-        <div class="col offset-10 s12">
-        <hr>
-        <form action="/api/user/new" method="post">
-          <label for="firstname"> First Name:</label>
-          <input type="text" name="firstname">
-          <br>
-          <label for="lastname"> Last Name:</label>
-          <input type="text" name="lastname">
-          <br>
-          <label for="email"> Email:</label>
-          <input type="text" name="email">
-          <br>
-          <label for="pass"> Password:</label>
-          <input type="password" name="password">
-
-          <div class="col offset-10 s12 center-align">
-          <button type="submit" name="button">Submit</button>
-          </div>
-        </form>
+    <div class="row center">
+        <div class="col s12">
+            <h3>Create a user:</h3>
         </div>
     </div>
+    <div class="row center">
+        <div class="col s12">
+            <hr>
+            <form action="/api/user/new" method="post">
+                <label for="firstname"> First Name:</label>
+                <input type="text" name="firstname">
+                <br>
+                <label for="lastname"> Last Name:</label>
+                <input type="text" name="lastname">
+                <br>
+                <label for="email"> Email:</label>
+                <input type="text" name="email">
+                <br>
+                <label for="pass"> Password:</label>
+                <input type="password" name="password">
+                <button type="submit" name="button">Submit</button>
+            </form>
+        </div>
     </div>
 </div>
-</div>
-
-{{!--   SIDE NAV --}}
-  <ul id="slide-out" class="side-nav">
-    <li><div class="user-view">
-    </div></li>
-    <li><a href="/">Home</a></li>
-    {{!-- <li><a href="dashboard">Event Dashboard</a></li> --}}
-    <li><a href="about">About</a></li>
-     <li><a href= "https://github.com/marianapt/Project2" target="_blank"><img src="images/github.png" alt="GitHub" width=40 height=40</a></li>
-  </ul>

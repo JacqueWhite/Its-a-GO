@@ -1,29 +1,27 @@
-<!-- NAVBAR -->
-
-<div class="mainContainer">
-  <div class="navbar">
-  <nav>
-    <div class="nav-wrapper">
-    <a href="/" class="brand-logo">itsaGO</a>
-    <ul class="right hide-on-med-and-down navList">
-      {{!-- <li><a href="login">Login</a></li> --}}
-      <li><a href="signout">Home</a></li>
-      {{!-- <li><a href="dashboard">Event Dashboard</a></li> --}}
-      <li><a href="about">About</a></li>
-      <li><a href= "https://github.com/marianapt/Project2" target="_blank"></a>GitHub</li>
-    </ul>
-
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-
+<div class="navbar-fixed">
+  <nav role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container movetext" href="/" class="brand-logo">ItsaGO</a>
+        <ul class="right hide-on-med-and-down section table-of-contents">
+          <li><a class="active" href="/">Home</a></li>
+          <li><a href="login">Login</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="https://github.com/JacqueWhite/Its-a-GO" target="_blank">GitHub</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a class="active" href="/">Home</a></li>
+          <li><a href="login">Login</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="https://github.com/JacqueWhite/Its-a-GO" target="_blank">GitHub</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
   </nav>
-  </div>
-<!-- END NAVBAR -->
+</div>
 
-<!-- Login -->
-<br>
 <div class="container">
   <div class="row center">
-    <div class="col s6 offset-s3 teal lighten-5 black-text peaches">
+    <div class="col s12 black-text">
       <h2>User login:</h2>
       <form class="" action="/api/user/login" method="post">
         <label for="email">Email:</label>
@@ -39,13 +37,3 @@
     </div>
   </div>
 </div>
-
-
-{{!--   SIDE NAV --}}
-  <ul id="slide-out" class="side-nav">
-    <li><div class="user-view">
-    </div></li>
-    <li><a href="signout">Home</a></li>
-    <li><a href="about">About</a></li>
-    <li><a href= "https://github.com/marianapt/Project2" target="_blank"><img src="images/github.png" alt="GitHub" width=40 height=40</a></li>
-  </ul>

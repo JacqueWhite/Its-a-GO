@@ -1,22 +1,27 @@
 <!-- NAVBAR -->
 
 <div class="mainContainer">
-  <div class="navbar">
-  <nav>
-    <div class="nav-wrapper">
-    <a href="/" class="brand-logo">itsaGO</a>
-    <ul class="right hide-on-med-and-down navList">
-      {{!-- <li><a href="login">Login</a></li> --}}
-      <li><a href="signout">Log Out</a></li>
-      {{!-- <li><a href="dashboard">Event Dashboard</a></li> --}}
-      <li><a href="about">About</a></li>
-      <li><a href= "https://github.com/marianapt/Project2" target="_blank"></a>GitHub</li>
-    </ul>
 
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-
+<div class="navbar-fixed">
+  <nav role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container movetext" href="/" class="brand-logo">ItsaGO</a>
+        <ul class="right hide-on-med-and-down section table-of-contents">
+          <li><a class="active" href="/">Home</a></li>
+          <li><a href="login">Login</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="https://github.com/JacqueWhite/Its-a-GO" target="_blank">GitHub</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a class="active" href="/">Home</a></li>
+          <li><a href="login">Login</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="https://github.com/JacqueWhite/Its-a-GO" target="_blank">GitHub</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
   </nav>
-  </div>
+</div>
 
 <!-- END NAVBAR -->
 

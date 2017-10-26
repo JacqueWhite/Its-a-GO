@@ -1,68 +1,60 @@
-<!-- NAVBAR -->
-
-<div class="mainContainer">
-  <div class="navbar">
-  <nav>
-    <div class="nav-wrapper">
-     <a href="/" class="brand-logo">itsaGO</a>
-    <ul class="right hide-on-med-and-down navList">
-      {{!-- <li><a href="login">Login</a></li> --}}
-      <li><a href="signout">Log Out</a></li>
-      <li><a href="dashboard">Event Dashboard</a></li>
-      <li><a href="about">About</a></li>
-      <li><a href= "https://github.com/marianapt/Project2" target="_blank"></a>GitHub</li>
-    </ul>
-
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-  </div>
+<div class="navbar-fixed">
+  <nav role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container movetext" href="/" class="brand-logo">ItsaGO</a>
+        <ul class="right hide-on-med-and-down section table-of-contents">
+          <li><a class="active" href="/">Home</a></li>
+          <li><a href="login">Login</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="https://github.com/JacqueWhite/Its-a-GO" target="_blank">GitHub</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a class="active" href="/">Home</a></li>
+          <li><a href="login">Login</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="https://github.com/JacqueWhite/Its-a-GO" target="_blank">GitHub</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
   </nav>
+</div>
 
 
 <!-- END NAVBAR -->
 <div class="container">
-<div class="row teal lighten-4" style="margin-top:24px; padding:20px">
-    <div class="col s12 teal accent-4">
+  <div class="row teal lighten-4" style="margin-top:24px; padding:20px">
+      <div class="col s12 teal accent-4">
 
-        <h2 style="text-align: center">Create a new event:</h2>
-    <hr>
-    </div>
-    <div class="col s2"></div>
-    <div class="col s6">
-        <form action="/api/event/new" method="post">
+          <h2 style="text-align: center">Create a new event:</h2>
+      <hr>
+      </div>
+      <div class="col s2"></div>
+      <div class="col s6">
+          <form action="/api/event/new" method="post">
 
-            <label for="eventName" placeholder="Folsom Street Festival">Event</label>
-            <input type="text" name="eventName">
-            <br>
+              <label for="eventName" placeholder="Folsom Street Festival">Event</label>
+              <input type="text" name="eventName">
+              <br>
 
-            <label for="date" placeholder="2018-09-21">Date</label>
-            <input id="date" type="date" name="date">
-            <br>
+              <label for="date" placeholder="2018-09-21">Date</label>
+              <input id="date" type="date" name="date">
+              <br>
 
-            <label for="notes" placeholder="Bring sunscreen!">Notes to participants</label>
-            <input type="text" name="notes">
-            <br>
+              <label for="notes" placeholder="Bring sunscreen!">Notes to participants</label>
+              <input type="text" name="notes">
+              <br>
 
-            <label for="totalCost" placeholder="600.00">Total Cost</label>
-            <input type="text" name="totalCost">
-            <br>
+              <label for="totalCost" placeholder="600.00">Total Cost</label>
+              <input type="text" name="totalCost">
+              <br>
 
-            <label for="maxCPP" placeholder="75.00">Max Cost per Person</label>
-            <input type="text" name="maxCPP">
-            <br>
+              <label for="maxCPP" placeholder="75.00">Max Cost per Person</label>
+              <input type="text" name="maxCPP">
+              <br>
 
-            <button type="submit" name='button'>Submit</button>
-        </form>
-        </div>
-    <div class="col s2"></div>
+              <button type="submit" name='button'>Submit</button>
+          </form>
+          </div>
+      <div class="col s2"></div>
+  </div>
 </div>
-</div>
-
-{{!--   SIDE NAV --}}
-  <ul id="slide-out" class="side-nav">
-    <li><div class="user-view">
-    </div></li>
-    <li><a href="signout">Sign Out</a></li>
-    <li><a href="dashboard">Event Dashboard</a></li>
-    <li><a href="about">About</a></li>
-    <li><a href= "https://github.com/marianapt/Project2" target="_blank"><img src="images/github.png" alt="GitHub" width=40 height=40</a></li>
-  </ul>

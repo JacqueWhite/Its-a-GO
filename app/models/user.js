@@ -1,4 +1,4 @@
-//Example User model.
+ //Example User model.
 //TODO: Define the data and functions we'll need for each user.
 // MySQL has a function called UUID() which will generate a long unique string. Maybe we should use that.
 

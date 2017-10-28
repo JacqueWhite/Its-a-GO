@@ -1,83 +1,74 @@
 <!-- NAVBAR -->
-
-<div class="mainContainer">
+<div class="container">
 
 <div class="navbar-fixed">
-  <nav role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container movetext" href="/" class="brand-logo">ItsaGO</a>
-        <ul class="right hide-on-med-and-down section table-of-contents">
-          <li><a class="active" href="/">Home</a></li>
-          <li><a href="login">Login</a></li>
-          <li><a href="about">About</a></li>
-          <li><a href="https://github.com/JacqueWhite/Its-a-GO" target="_blank">GitHub</a></li>
-        </ul>
-        <ul id="nav-mobile" class="side-nav">
-          <li><a class="active" href="/">Home</a></li>
-          <li><a href="login">Login</a></li>
-          <li><a href="about">About</a></li>
-          <li><a href="https://github.com/JacqueWhite/Its-a-GO" target="_blank">GitHub</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-  </nav>
+    <nav role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container movetext" href="/" class="brand-logo">ItsaGO</a>
+            <ul class="right hide-on-med-and-down section table-of-contents">
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="login">Login</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="https://github.com/JacqueWhite/Its-a-GO" target="_blank">GitHub</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="login">Login</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="https://github.com/JacqueWhite/Its-a-GO" target="_blank">GitHub</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
 </div>
+    <!-- END NAVBAR -->
 
-<!-- END NAVBAR -->
+<!-- main container -->
+<div class="row">
 
-<div class="container"> <!-- main container -->
-<div class="row" id="main-row">
-
-      <div class="col s6 black-text center-align"><!-- Profile picture / user info -->
-        <h4>Hi {{this.firstname}}</h4>
-        <script src="https://www.avatarapi.com/js.aspx?email={{this.email}}&size=200">
-        </script>
-
-        <div class="section">
-          <ul>
-           {{!--  <li>
-              <p class="flow-text">Email: {{this.email}} </p>
-            </li> --}}
-            <hr>
-            <li>
-              <p class="flow-text"><strong>Events Planned:<strong> </p>
-            </li>
-          </ul>
-        </div><!-- end section -->
-
-    <div class="col s6">
-      <h5 class="calendar">Upcoming Events<span id= "calendar"></span></h5>
-      <div class="collection">
-        <!-- This is a horrible placeholder/hack... -->
-        <a href="/1" class="collection-item">event 1</a>
-        <a href="/2" class="collection-item">event 2</a>
-        <a href="/3" class="collection-item">event 3</a>
-        <a href="/4" class="collection-item">event 4</a>
+  {{!-- profile section --}}
+  <div class="col s12 m6 l6">
+      <div id="profile-card" class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator responsive-img" src="https://s3.us-east-2.amazonaws.com/jacqueportfolio/purty_wood_%402X.png" alt="user background">
+          </div>
+          <div class="card-content">
+              <div class="circle responsive-img activator card-profile-image">
+                  <script src="https://www.avatarapi.com/js.aspx?email={{this.email}}&size=200">
+                  </script>
+              </div>
+              </script>
+              <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right"><i class="mdi-action-account-circle"></i></a>
+              <span class="card-title activator grey-text text-darken-4">{{this.firstname}}</span>
+              <p><i class="mdi-communication-email cyan-text text-darken-2"></i>{{this.email}}</p>
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">{{this.firstname}}<i class="mdi-navigation-close right"></i></span>
+              <p>Here is some more information about this card.</p>
+              <p><i class="mdi-communication-email cyan-text text-darken-2"></i>{{this.email}}</p>
+              <p><i class="mdi-social-cake cyan-text text-darken-2"></i> 18th June 1990</p>
+              <p><i class="mdi-device-airplanemode-on cyan-text text-darken-2"></i> BAR - AUS</p>
+          </div>
       </div>
-    </div>
-    <br>
-    <br>
-
-
-
-  </div>  <!-- END OF ROW -->
-   <br>
-    <br>
-
-  <div class="col s12 center-align" id="eventDiv">
-     <hr>
-     <br>
-     <br>
-    <a href="/create" class="waves-effect waves-light btn ">Create Event</a>
   </div>
 
+  <div class="col s12 m6 m6">
+    <div id="profile-card" class="card">
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Upcoming Events</span>
+         <div class="collection">
+            <a href="/1" class="collection-item">event 1</a>
+            <a href="/2" class="collection-item">event 2</a>
+            <a href="/3" class="collection-item">event 3</a>
+            <a href="/4" class="collection-item">event 4</a>
+          </div>
+        <a href="/create" class="waves-effect waves-light btn ">Create Event</a>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 
-{{!--   SIDE NAV --}}
-  <ul id="slide-out" class="side-nav">
-    <li><div class="user-view">
-    </div></li>
-    <li><a href="signout">Home</a></li>
-    <li><a href="about">About</a></li>
-    <li><a href= "https://github.com/marianapt/Project2" target="_blank"><img src="images/github.png" alt="GitHub" width=40 height=40</a></li>
-  </ul>
+
+

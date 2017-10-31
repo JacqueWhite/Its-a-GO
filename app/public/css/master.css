@@ -54,7 +54,8 @@ div.row {
 
 div#overview-home.container {
     background-color: #292B2C;
-    width: 100%
+    width: 100%;
+    height: 100%
 }
 
 nav {
@@ -76,7 +77,7 @@ div#go-top {
 }
 
 div.row {
-    margin: 20px 0px 20px 0px;
+    margin: 0px;
 }
 
 .parallax img {
@@ -108,14 +109,10 @@ h1.header {
     margin-top: 2em;
 }
 
-div#section-2.section.scrollsby {
+div.section.scrollsby {
     background-color: #D3D3D3;
     margin: 0px;
     width: 100%; 
-}
-
-footer {
-
 }
 
 /*.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
@@ -183,6 +180,8 @@ img.avatarapi {
 .homepage-hero-module {
     border-right: none;
     border-left: none;
+    border-bottom: none;
+    border-top: none;
     position: relative;
 }
 
@@ -197,17 +196,20 @@ img.avatarapi {
 }
 
 .video-container {
-    position: relative;
-    bottom: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background: #000;
+
+    position: relative !important;
+    bottom: 0% !important;
+    top: 0% !important;
+    left: 0% !important;
+    height: 100% !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    background: #000 !important;
 }
+
 .video-container .poster img {
     width: 100%;
-    bottom: 0;
+    bottom: 0px;
     position: absolute;
 }
 .video-container .filter {

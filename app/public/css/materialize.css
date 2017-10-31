@@ -2760,7 +2760,7 @@ video.responsive-video {
 }
 
 .parallax-container {
-  position: relative;
+  position: inherit;
   overflow: hidden;
   height: 500px;
 }
@@ -2774,7 +2774,7 @@ video.responsive-video {
   z-index: -1;
 }
 
-.parallax-container .parallax img {
+.parallax-container .parallax img video {
   display: none;
   position: absolute;
   left: 50%;
@@ -3126,18 +3126,21 @@ td, th {
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
+  background: #000;
 }
 
-.video-container iframe, .video-container object, .video-container embed {
+./*video-container iframe, .video-container object, .video-container embed {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-}
+}*/
 
 .progress {
   position: relative;

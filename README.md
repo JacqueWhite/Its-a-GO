@@ -4,6 +4,8 @@
 
 Simple event and RSVP manager. Stop planning your parties and start *enjoying* them!
 
+<img src="https://s3.us-east-2.amazonaws.com/jacqueportfolio/itsago.png" href="https://itsa-go.herokuapp.com/" alt="homepage" height="400px"/>
+
 ### 3 simple steps:
 ### Red: Signup, login, create your event. You'll set:
 - total cost of the event

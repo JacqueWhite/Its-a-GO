@@ -1,60 +1,54 @@
 <div class="navbar-fixed">
-  <nav role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container movetext" href="/" class="brand-logo">ItsaGO</a>
-        <ul class="right hide-on-med-and-down section table-of-contents">
-          <li><a class="active" href="/">Home</a></li>
-          <li><a href="login">Login</a></li>
-          <li><a href="about">About</a></li>
-          <li><a href="https://github.com/JacqueWhite/Its-a-GO" target="_blank">GitHub</a></li>
-        </ul>
-        <ul id="nav-mobile" class="side-nav">
-          <li><a class="active" href="/">Home</a></li>
-          <li><a href="login">Login</a></li>
-          <li><a href="about">About</a></li>
-          <li><a href="https://github.com/JacqueWhite/Its-a-GO" target="_blank">GitHub</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-  </nav>
+    <nav role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container movetext" href="/" class="brand-logo">ItsaGO</a>
+            <ul class="right hide-on-med-and-down section table-of-contents">
+                <li><a href="/">Home</a></li>
+                <li><a class="active" href="/">New Event</a></li>
+                <li><a href="login">Login</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="https://github.com/JacqueWhite/Its-a-GO" target="_blank">GitHub</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="/">Home</a></li>
+                <li><a class="active" href="/">New Event</a></li>
+                <li><a href="login">Login</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="https://github.com/JacqueWhite/Its-a-GO" target="_blank">GitHub</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
 </div>
-
-
 <!-- END NAVBAR -->
+
+
 <div class="container">
-  <div class="row teal lighten-4" style="margin-top:24px; padding:20px">
-      <div class="col s12 teal accent-4">
-
-          <h2 style="text-align: center">Create a new event:</h2>
-      <hr>
-      </div>
-      <div class="col s2"></div>
-      <div class="col s6">
-          <form action="/api/event/new" method="post">
-
-              <label for="eventName" placeholder="Folsom Street Festival">Event</label>
-              <input type="text" name="eventName">
-              <br>
-
-              <label for="date" placeholder="2018-09-21">Date</label>
-              <input id="date" type="date" name="date">
-              <br>
-
-              <label for="notes" placeholder="Bring sunscreen!">Notes to participants</label>
-              <input type="text" name="notes">
-              <br>
-
-              <label for="totalCost" placeholder="600.00">Total Cost</label>
-              <input type="text" name="totalCost">
-              <br>
-
-              <label for="maxCPP" placeholder="75.00">Max Cost per Person</label>
-              <input type="text" name="maxCPP">
-              <br>
-
-              <button type="submit" name='button'>Submit</button>
-          </form>
-          </div>
-      <div class="col s2"></div>
+  <div class="row">
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">New Event:</span>
+            <form action="/api/event/new" method="post">
+                <label for="eventName" placeholder="Folsom Street Festival">Event</label>
+                <input type="text" name="eventName">
+                <br>
+                <label for="date" placeholder="2018-09-21">Date</label>
+                <input id="date" type="date" name="date">
+                <br>
+                <label for="notes" placeholder="Bring sunscreen!">Notes to participants</label>
+                <input type="text" name="notes">
+                <br>
+                <label for="totalCost" placeholder="600.00">Total Cost</label>
+                <input type="text" name="totalCost">
+                <br>
+                <label for="maxCPP" placeholder="75.00">Max Cost per Person</label>
+                <input type="text" name="maxCPP">
+                <br>
+                <button type="submit" name='button'>Submit</button>
+            </form>
+        </div>
+      </div> 
+    </div>
   </div>
 </div>

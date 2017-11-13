@@ -1,19 +1,21 @@
-$(document).ready(function(){
-	  $('.parallax').parallax();
-	  $('.scrollspy').scrollSpy();
-	  $(".button-collapse").sideNav();
-	  scaleVideoContainer();
+//jQuery is required to run this code
+$( document ).ready(function() {
+  $('.parallax').parallax();
+  $('.scrollspy').scrollSpy();
+  $(".button-collapse").sideNav();
+  scaleVideoContainer();
 
-	initBannerVideoSize('.video-container .poster img');
-	initBannerVideoSize('.video-container .filter');
-	initBannerVideoSize('.video-container video');
+    initBannerVideoSize('.video-container .poster img');
+    initBannerVideoSize('.video-container .filter');
+    initBannerVideoSize('.video-container video');
 
-	$(window).on('resize', function() {
-	    scaleVideoContainer();
-	    scaleBannerVideoSize('.video-container .poster img');
-	    scaleBannerVideoSize('.video-container .filter');
-	    scaleBannerVideoSize('.video-container video');
-	});
+    $(window).on('resize', function() {
+        scaleVideoContainer();
+        scaleBannerVideoSize('.video-container .poster img');
+        scaleBannerVideoSize('.video-container .filter');
+        scaleBannerVideoSize('.video-container video');
+    });
+
 });
 
 function scaleVideoContainer() {
@@ -49,7 +51,7 @@ function scaleBannerVideoSize(element){
 
         $(this).width(windowWidth);
 
-        if(windowWidth < 1000){
+        if(windowWidth < 1920){
             videoHeight = windowHeight;
             videoWidth = videoHeight / videoAspectRatio;
             $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
@@ -61,4 +63,3 @@ function scaleBannerVideoSize(element){
 
     });
 }
-   

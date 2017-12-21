@@ -28,6 +28,29 @@ router.get("/login", function(req,res) {
 
 });
 
+
+router.get("/logout", function(req,res) {
+  if (req.cookies.cookiename) {
+    jwt.verify(req.cookies.cookiename.token, secret, function(err, decoded) {
+      if (err) throw err;
+      res.redirect("/dashboard")
+    });
+  } else {
+    res.render("login");
+  }
+
+});
+
+// route for user logout
+// app.get('/logout', (req, res) => {
+//     if (req.cookies.cookiename) {
+//         res.clearCookie('user_sid');
+//         res.redirect('/');
+//     } else {
+//         res.redirect('/login');
+//     }
+// });
+
 router.get("/signup", function(req,res) {
   if (req.cookies.cookiename) {
     jwt.verify(req.cookies.cookiename.token, secret, function(err, decoded) {

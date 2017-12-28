@@ -1,9 +1,3 @@
-// *****************************************************************************
-// Server.js - This file is the initial starting point for the Node/Express server.
-//
-// ******************************************************************************
-// *** Dependencies
-// =============================================================
 var fs = require('fs');
 var express = require("express");
 var bodyParser = require("body-parser");
@@ -11,10 +5,8 @@ var methodOverride = require("method-override");
 var path = require("path");
 var cookieParser = require('cookie-parser');
 
-
 //read our cert file for use later
 var cert = fs.readFileSync(path.join(__dirname, 'private.pem'));  // get private key
-
 
 // Set up the Express App
 // =============================================================
@@ -70,9 +62,8 @@ app.use("/api/user", userController);
 var participantController = require("./app/controllers/participantcontroller.js");
 app.use("/api/participant", participantController);
 
-// Syncing our sequelize models and then starting our Express app
+// Syncing sequelize models and then starting our Express app
 // =============================================================
-
 db.sequelize.sync({ force: true }).then(function() {
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);

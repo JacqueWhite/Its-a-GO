@@ -22,18 +22,20 @@
 <div class="container">
   <div class="row center">
     <div class="col s12 black-text">
-      <h2>User login:</h2>
-      <form class="" action="/api/user/login" method="post">
-        <label for="email">Email:</label>
-        <input type="text" name="email">
+      <div class="card">
+        <h2>User login:</h2>
+        <form class="" action="/api/user/login" method="post">
+          <label for="email">Email:</label>
+          <input type="text" name="email">
+          <br>
+          <label for="pass">Password:</label>
+          <input type="password" name="password">
+          
+          <button type="submit" name="button" class="waves-effect waves-light btn-light orange">Submit</button>
+        </form>
         <br>
-        <label for="pass">Password:</label>
-        <input type="password" name="password">
-        
-        <button type="submit" name="button" class="waves-effect waves-light btn-light orange">Submit</button>
-      </form>
-      <br>
-      <p class="black-text">Not a user? <a class="blue-text" href="/signup">Signup.</a></p>
+        <p class="black-text">Not a user? <a class="blue-text" href="/signup">Signup.</a></p>
+      </div>
     </div>
   </div>
 </div>
